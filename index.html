@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>To do App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <h1 class="accent-clr header-title text-center">Todo App</h1>
+
+        <form class="header-form grid-parent">
+          <div>
+            <input
+              type="text"
+              class="header-form-input"
+              placeholder="Add To do!"
+              id="input-add"
+            />
+          </div>
+
+          <div>
+            <button class="btn btn-submit" id="btn-submit">Add Todo</button>
+          </div>
+        </form>
+      </header>
+
+      <main class="main-container">
+        <ul class="todo-list d-flex gap d-flex-direction-column" id="todo-list">
+          <!-- <li class="todo-list-item d-flex d-flex-justify-between">
+            <div class="d-flex d-flex-align-center gap">
+              <div class="todo-input-checked-container">
+                <input type="checkbox" class="todo-input-checked" />
+              </div>
+
+              <div class="todo-list-item-text-container">
+                <p class="todo-list-item-text">Water the plants</p>
+              </div>
+            </div>
+
+            <div class="todo-list-item-delete-container">
+              <button class="btn-delete">
+                <i class="fa-regular fa-trash-can fa-lg"></i>
+              </button>
+            </div>
+          </li> -->
+
+          <!-- <li
+            class="todo-list-item d-flex d-flex-justify-between"
+            id="todo-list"
+          >
+            <div class="d-flex d-flex-align-center gap">
+              <div class="todo-input-checked-container">
+                <input type="checkbox" class="todo-input-checked" />
+              </div>
+
+              <div class="todo-list-item-text-container">
+                <p class="todo-list-item-text text-decoration-line-through">
+                  Wash the dishes
+                </p>
+              </div>
+            </div>
+
+            <div class="todo-list-item-delete-container">
+              <button class="btn-delete">
+                <i class="fa-regular fa-trash-can fa-lg"></i>
+              </button>
+            </div>
+          </li> -->
+
+          <!-- <li class="todo-list-item d-flex d-flex-justify-between">
+            <div class="d-flex d-flex-align-center gap">
+              <div class="todo-input-checked-container">
+                <input type="checkbox" class="todo-input-checked" />
+              </div>
+
+              <div class="todo-list-item-text-container">
+                <p class="todo-list-item-text text-decoration-line-through">
+                  Walk the dog
+                </p>
+              </div>
+            </div>
+
+            <div class="todo-list-item-delete-container">
+              <button class="btn-delete">
+                <i class="fa-regular fa-trash-can fa-lg"></i>
+              </button>
+            </div>
+          </li> -->
+
+          <!-- <li class="todo-list-item d-flex d-flex-justify-between">
+            <div class="d-flex d-flex-align-center gap">
+              <div class="todo-input-checked-container">
+                <input type="checkbox" class="todo-input-checked" />
+              </div>
+
+              <div class="todo-list-item-text-container">
+                <p class="todo-list-item-text">Pay the bills</p>
+              </div>
+            </div>
+
+            <div class="todo-list-item-delete-container">
+              <button class="btn-delete">
+                <i class="fa-regular fa-trash-can fa-lg"></i>
+              </button>
+            </div>
+          </li> -->
+        </ul>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

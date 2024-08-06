@@ -1,0 +1,169 @@
+:root {
+  font-size: 16px;
+
+  --primary-clr: #201e43;
+  --secondary-clr: #eeeeee;
+  --accent-clr: #508c9b;
+  --accent-clr-1: #134b70;
+  --accent-clr-2: #686d76;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 160%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-clr);
+  color: var(--secondary-clr);
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 400px;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-justify-between {
+  justify-content: space-between;
+}
+
+.d-flex-align-center {
+  align-items: center;
+}
+
+.d-flex-direction-column {
+  flex-direction: column;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+  color: #dc5f00;
+}
+
+.accent-clr {
+  color: var(--accent-clr);
+}
+
+.btn-submit {
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.0125rem;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-clr);
+  transform: scale(1.5);
+  border: none;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+/* Header */
+
+.header-container {
+  padding-bottom: 1rem;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.25rem;
+  padding: 2.5rem;
+}
+
+.header-form {
+  padding-bottom: 0.8rem;
+}
+
+.header-form-input {
+  background-color: var(--accent-clr-1);
+  color: var(--secondary-clr);
+  border-radius: 0.5rem 0.5rem 0.25rem 0.25rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: -0.0125rem;
+}
+
+.header-form-input::placeholder {
+  color: var(--secondary-clr);
+}
+
+.header-form-input:focus {
+  outline: none;
+  background-color: var(--accent-clr);
+  color: var(--secondary-clr);
+}
+
+/* Item */
+
+.todo-list-item {
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 0 0 0.0125rem var(--accent-clr);
+  border-radius: 0.25rem;
+}
+
+.todo-list-item-text {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.0125rem;
+}
+
+.btn-delete {
+  color: var(--accent-clr);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
